@@ -16,12 +16,12 @@
 
       <link rel="stylesheet" type="text/css" href="http://crossbar.io/static/deps/bootstrap/bootstrap.min.css" />
 
-      <link rel="stylesheet" type="text/css" href="http://crossbar.io//tavendo-common-static.s3-eu-west-1.amazonaws.com/css/tavendo.css">
+      <link rel="stylesheet" type="text/css" href="//tavendo-common-static.s3-eu-west-1.amazonaws.com/css/tavendo.css">
       <link rel="stylesheet" type="text/css" href="http://crossbar.io/static/css/crossbar.css" />
 
       <!-- pygments styling -->
       <!-- <link rel="stylesheet" type="text/css" href="http://crossbar.io/static/css/code.css"> -->
-      <link rel="stylesheet" type="text/css" href="http://crossbar.io//tavendo-common-static.s3-eu-west-1.amazonaws.com/css/code.css">
+      <link rel="stylesheet" type="text/css" href="//tavendo-common-static.s3-eu-west-1.amazonaws.com/css/code.css">
 
       
       <script>
@@ -33,9 +33,6 @@
         ga('create', 'UA-23019220-6', 'crossbar.io');
         ga('send', 'pageview');
       </script>
-      
-
-      
    </head>
 
    <body>
@@ -142,6 +139,24 @@
             </div>
          </div>
 
+        <div id="introduction">
+            Crossbar.io is a router for <a href="http://wamp.ws/">WAMP</a>, the Web Application Messaging Protocol. 
+            That protocol was created to embrace the power of <a href="http://wamp.ws/faq/#websockets">websockets</a> 
+            to enable different technologies, processes and machines communicate 
+            with each others in real time through messages.<br/>
+            Each component, written with <a href="http://autobahn.ws/">Autobahn</a>, thus lives on its own, 
+            independent of the others. Crossbar.io, the part routing messages, is what connects them.
+        
+            <figure>
+              <img src="static/img/wamp_ecosystem.png" alt="WAMP ecosystem" />
+              <figcaption>The WAMP ecosystem, in a really-ugly way</figcaption>
+            </figure>
+        </div>
+     </div>
+
+    <div class="what-it-does">
+        <h1>What it does</h1>
+
          <div class="topCarousel">
 
             <div class="controller">
@@ -155,9 +170,9 @@
 
                   <div class="content iotContent active">
                      <div>
-                        <h1>
+                        <h2>
                            Ideal for IoT applications
-                        </h1>
+                        </h2>
                         
                      </div>
                      <img src="http://crossbar.io/static/img/gen/iot_draft.svg" alt="Crossbar.io and connected components, including IoT devices, browser, mobile and native clients, and server and database backends.">
@@ -196,9 +211,9 @@
 
                   <div class="content webContent">
                      <div>
-                        <h1>
+                        <h2>
                            Modern, responsive, realtime Web Apps   
-                        </h1>
+                        </h2>
                      </div>
                      <img src="http://crossbar.io/static/img/gen/web_draft.png" alt="Crossbar.io and connected components, including IoT sensors, IoT actuators, browser, mobile and native clients, and server and database backends.">
                      <div class="advantages">
@@ -242,6 +257,126 @@
             
             
          </div>
+         
+         <a id="demos"></a>
+         <h2>Live Demos</h2>
+         <div id="demoBox">
+            <p>
+               Crossbar.io is great for building advanced, distributed applications for
+               Mobile, Web and Internet-of-Things (IoT). In particular if you need real-time.
+               To give you a taste, here are a couple of live demos.
+            </p>
+            <!-- <p>
+               Crossbar.io is a good fit for ...
+               WAMP is ideal for distributed, multi-client and server applications, such as multi-user database-driven business applications, sensor networks (IoT), instant messaging or MMOGs (massively multi-player online games).
+
+               WebSocket is great for apps like chat, trading, multi-player games or real-time charts. It allows you to actively push information to clients as it happens.
+
+               Further, WebSocket allows you to real-time enable your Web user interfaces: always current information without reloads or polling. UIs no longer need to be a boring, static thing. Looking for the right communication technology for your next-generation Web apps? Enter WebSocket.
+
+               And WebSocket works great not only on the Web, but also as a protocol for wiring up the Internet-of-Things (IoT). Connecting a sensor or actor to other application components in real-time over an efficient protocol. Plus: you are using the same protocol to connect frontends like Web browsers.
+            </p> -->
+
+            <div class="demos-overview-link">
+               Check out all <a href="https://demo.crossbar.io/">demos</a>
+               or go directly to one randomly picked:
+            </div>
+            <br>
+            <ul class="demos_list">
+
+               <li class="nonDisplay">
+                  <a href="https://demo.crossbar.io/demo/pubsub/index.html">
+                     PubSub
+                     <img src="http://crossbar.io/static/img/screenshot_pubsub.png" />
+                  </a>
+                  Basic publish &amp; subscribe
+               </li>
+
+               <li class="nonDisplay">
+                  <a href="https://demo.crossbar.io/demo/notification/index.html">
+                     Notification
+                     <img src="http://crossbar.io/static/img/screenshot_notifications.png" />
+                  </a>
+                  Real-time notifications
+               </li>
+
+               <li>
+                  <a href="https://demo.crossbar.io/demo/chat/index.html#ch1">
+                     Chat
+                     <img src="http://crossbar.io/static/img/screenshot_chat.png" />
+                  </a>
+                  A group chat widget
+               </li>
+
+               <li>
+                  <a href="https://demo.crossbar.io/demo/gauges/index.html">
+                     Gauges
+                     <img src="http://crossbar.io/static/img/screenshot_gauges.png" />
+                  </a>
+                  Gauges with real-time sync
+               </li>
+
+               <li class="nonDisplay">
+                  <a href="https://demo.crossbar.io/demo/sliders/index.html">
+                     Sliders
+                     <img src="http://crossbar.io/static/img/screenshot_sliders.png" />
+                  </a>
+                  Sliders with real-time UI sync
+               </li>
+
+               <li class="nonDisplay">
+                  <a href="https://demo.crossbar.io/demo/colorpicker/index.html">
+                     Colorpicker
+                     <img src="http://crossbar.io/static/img/screenshot_colorpicker.png" />
+                  </a>
+                  A collaborative colorpicker
+               </li>
+
+               <li class="nonDisplay">
+                  <a href="https://demo.crossbar.io/demo/beatbox/index.html">
+                     Beatbox
+                     <img src="http://crossbar.io/static/img/screenshot_beatbox.png" />
+                  </a>
+                  A collaborative beatbox
+               </li>
+
+            </ul>
+         </div>
+
+         <div class="ctaContainer">
+            <a href="http://crossbar.io/docs//Quick-Start">Try it out!</a>
+         </div>
+      </div>
+   </div>
+
+   <script>
+      // randomly pick two of the existing demos for display
+
+      // get all demo list elements into array
+      var demosNodeList = document.querySelectorAll(".demos_list > li");
+      var demosArray = [];
+      // set all to display: none
+      // and copy nodesList into real array with array methods
+      for(var i = 0; i < demosNodeList.length; i++) {
+         demosNodeList[i].classList.add("nonDisplay");
+         demosArray[i] = demosNodeList[i];
+      }
+
+      // pick a number between one and the array length
+      // display this element + remove from array
+      function displayRandomDemo() {
+         var d = Math.floor(Math.random() * demosArray.length);
+         demosArray[d].classList.remove("nonDisplay");
+         demosArray.splice(d, 1);
+      }
+
+      // pick the two demos
+      displayRandomDemo();
+      displayRandomDemo();
+      // displayRandomDemo();
+   </script>
+         
+    </div>
 
          <script>
 var activeContent = "iot";
@@ -280,13 +415,14 @@ var switchCarousel = function (type) {
             </p>
          </center> -->
 
+        <hr>
+        <strong>To be continued.</strong>
+        <hr>
+
          <a id="howitworks"></a>
          <div class="how-does-it-work">
-<!--             <h1>
-               How it works
-            </h1> -->
             <h1>
-               What it does
+               How it works
             </h1>
             <p>
                Application components connect to Crossbar.io and can then talk to each other using
@@ -641,123 +777,7 @@ var switchCarousel = function (type) {
             </table>
          </div>
 
-         <a id="demos"></a>
-         <h1>Live Demos</h1>
-         <div id="demoBox">
-            <p>
-               Crossbar.io is great for building advanced, distributed applications for
-               Mobile, Web and Internet-of-Things (IoT). In particular if you need real-time.
-               To give you a taste, here are a couple of live demos.
-            </p>
-            <!-- <p>
-               Crossbar.io is a good fit for ...
-               WAMP is ideal for distributed, multi-client and server applications, such as multi-user database-driven business applications, sensor networks (IoT), instant messaging or MMOGs (massively multi-player online games).
-
-               WebSocket is great for apps like chat, trading, multi-player games or real-time charts. It allows you to actively push information to clients as it happens.
-
-               Further, WebSocket allows you to real-time enable your Web user interfaces: always current information without reloads or polling. UIs no longer need to be a boring, static thing. Looking for the right communication technology for your next-generation Web apps? Enter WebSocket.
-
-               And WebSocket works great not only on the Web, but also as a protocol for wiring up the Internet-of-Things (IoT). Connecting a sensor or actor to other application components in real-time over an efficient protocol. Plus: you are using the same protocol to connect frontends like Web browsers.
-            </p> -->
-
-            <div class="demos-overview-link">
-               Check out all <a href="https://demo.crossbar.io/">demos</a>
-               or go directly to one randomly picked:
-            </div>
-            <br>
-            <ul class="demos_list">
-
-               <li class="nonDisplay">
-                  <a href="https://demo.crossbar.io/demo/pubsub/index.html">
-                     PubSub
-                     <img src="http://crossbar.io/static/img/screenshot_pubsub.png" />
-                  </a>
-                  Basic publish &amp; subscribe
-               </li>
-
-               <li class="nonDisplay">
-                  <a href="https://demo.crossbar.io/demo/notification/index.html">
-                     Notification
-                     <img src="http://crossbar.io/static/img/screenshot_notifications.png" />
-                  </a>
-                  Real-time notifications
-               </li>
-
-               <li>
-                  <a href="https://demo.crossbar.io/demo/chat/index.html#ch1">
-                     Chat
-                     <img src="http://crossbar.io/static/img/screenshot_chat.png" />
-                  </a>
-                  A group chat widget
-               </li>
-
-               <li>
-                  <a href="https://demo.crossbar.io/demo/gauges/index.html">
-                     Gauges
-                     <img src="http://crossbar.io/static/img/screenshot_gauges.png" />
-                  </a>
-                  Gauges with real-time sync
-               </li>
-
-               <li class="nonDisplay">
-                  <a href="https://demo.crossbar.io/demo/sliders/index.html">
-                     Sliders
-                     <img src="http://crossbar.io/static/img/screenshot_sliders.png" />
-                  </a>
-                  Sliders with real-time UI sync
-               </li>
-
-               <li class="nonDisplay">
-                  <a href="https://demo.crossbar.io/demo/colorpicker/index.html">
-                     Colorpicker
-                     <img src="http://crossbar.io/static/img/screenshot_colorpicker.png" />
-                  </a>
-                  A collaborative colorpicker
-               </li>
-
-               <li class="nonDisplay">
-                  <a href="https://demo.crossbar.io/demo/beatbox/index.html">
-                     Beatbox
-                     <img src="http://crossbar.io/static/img/screenshot_beatbox.png" />
-                  </a>
-                  A collaborative beatbox
-               </li>
-
-            </ul>
-         </div>
-
-         <div class="ctaContainer">
-            <a href="http://crossbar.io/docs//Quick-Start">Try it out!</a>
-         </div>
-      </div>
-   </div>
-
-   <script>
-      // randomly pick two of the existing demos for display
-
-      // get all demo list elements into array
-      var demosNodeList = document.querySelectorAll(".demos_list > li");
-      var demosArray = [];
-      // set all to display: none
-      // and copy nodesList into real array with array methods
-      for(var i = 0; i < demosNodeList.length; i++) {
-         demosNodeList[i].classList.add("nonDisplay");
-         demosArray[i] = demosNodeList[i];
-      }
-
-      // pick a number between one and the array length
-      // display this element + remove from array
-      function displayRandomDemo() {
-         var d = Math.floor(Math.random() * demosArray.length);
-         demosArray[d].classList.remove("nonDisplay");
-         demosArray.splice(d, 1);
-      }
-
-      // pick the two demos
-      displayRandomDemo();
-      displayRandomDemo();
-      // displayRandomDemo();
-   </script>
+         
 
    <script>
       // set up the buttons for clicking
